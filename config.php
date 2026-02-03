@@ -7,11 +7,5 @@ return [
         "password" => "",
         "dbname" => "blog",
         "charset" => "utf8mb4"
-    ],
-    "email" => [
-
-    ],
-    "payments" => [
-
     ]
 ];

@@ -20,6 +20,6 @@ VALUES
 INSERT INTO categories
 (`category_name`)
 VALUES
-("Svērtki"),
+("Svētki"),
 ("Mūzika"),
 ("Sports");

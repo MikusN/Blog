@@ -14,7 +14,4 @@ class Database {
         return $statement;
     }
  
-    
-
-    // Koda turpinājus...
 }

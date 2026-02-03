@@ -13,18 +13,4 @@ if(isset($_GET["search_query"]) && trim($_GET["search_query"]) != "") {
 }
 $posts = $db->query($sql_query, $params)->fetchAll(PDO::FETCH_ASSOC);
 
-echo "<h1>Categories</h1>";
-
-echo "<form>";
-    echo "<input name='search_query' type='text' />";
-    echo "<input type='submit' value='Meklēt' />";
-echo "</form>";
-
-echo "<ul>";
-    foreach($posts as $post) {
-        echo "<li>" . $post["category_name"] . "</li>";
-    }
-echo "</ul>";
-
-$firstPost = $db->query("SELECT * FROM categories WHERE id = 1")->fetch(PDO::FETCH_ASSOC);
-dd($firstPost);
+require "./views/categories.view.php";
