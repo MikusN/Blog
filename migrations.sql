@@ -9,7 +9,7 @@ CREATE TABLE posts(
 CREATE TABLE categories(
 	id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	category_name VARCHAR(25) NOT NULL
-)
+);
 
 INSERT INTO posts
 (`content`)
@@ -20,6 +20,6 @@ VALUES
 INSERT INTO categories
 (`category_name`)
 VALUES
-("Svērtki"),
+("Svētki"),
 ("Mūzika"),
 ("Sports");
